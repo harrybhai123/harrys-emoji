@@ -1,0 +1,139 @@
+html {
+  height: 100vh;
+  font-family: Baloo;
+}
+
+body {
+  padding: 10px;
+  background-image: linear-gradient(#9688e6, rgb(48, 5, 97));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  background-color: darkblue;
+  height: 60vh;
+  width: 50vw;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#emoji-container {
+  margin: 40px;
+  text-align: center;
+}
+
+#emoji-container span {
+  margin: 5px;
+  font-size: 60px;
+}
+
+#push-btn,
+#unshift-btn {
+  color: darkblue;
+  background-color: #80d87f;
+}
+#push-btn:hover,
+#unshift-btn:hover {
+  background-image: linear-gradient(#9688e6, rgb(48, 5, 97));
+  transition: all infinite ease-in-out;
+}
+
+#shift-btn,
+#pop-btn {
+  color: darkblue;
+  background-color: #e23349;
+}
+#shift-btn:hover,
+#pop-btn:hover {
+  background-image: linear-gradient(#9688e6, rgb(48, 5, 97));
+  transition: all infinite ease-in-out;
+}
+
+h1 {
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+}
+
+input {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  width: 220px;
+  height: 50px;
+  background: white;
+  border-radius: 6px;
+  text-align: center;
+}
+
+button {
+  font-family: Baloo;
+  letter-spacing: 2px;
+  background: darkcyan;
+  color: darkblue;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin: 0 4px;
+  height: 50px;
+  width: 200px;
+}
+.btn-default {
+  background-color: #000;
+  color: #ffe100;
+}
+.btn-primary {
+  background-color: #ffe100;
+  color: #000;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px #c4a300;
+  }
+  40% {
+    box-shadow: 0 0 20px #c4a300;
+  }
+  60% {
+    box-shadow: 0 0 20px #c4a300;
+  }
+  100% {
+    box-shadow: 0 0 -10px #c4a300;
+  }
+}
+
+.button-glow {
+  animation: glowing 5000ms infinite;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 40px;
+}

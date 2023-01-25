@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Harry's Emojis</h1>
+      <div id="emoji-container"></div>
+      <input type="text" id="emoji-input" placeholder="type an emoji 🎉" />
+      <div class="buttons-wrapper">
+        <button class="btn btn-lg btn-default button-glow" id="push-btn">
+          Add to end
+        </button>
+        <button class="btn btn-lg btn-default button-glow" id="unshift-btn">
+          Add to beginning
+        </button>
+      </div>
+      <div class="buttons-wrapper">
+        <button class="btn btn-lg btn-default button-glow" id="pop-btn">
+          Remove from end
+        </button>
+        <button class="btn btn-lg btn-default button-glow" id="shift-btn">
+          Remove from beginning
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
